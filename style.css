@@ -1,0 +1,315 @@
+/** Base CSS **/
+* {
+  margin: 0;
+  padding: 0; 
+}
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto !important;
+  font-family: 'Quicksand', sans-serif;;
+  font-size: 15px;
+  font-weight: 400;
+  background: url('images/core-img/main-bg.png') no-repeat 0 0/cover #fff; 
+  color: #000;
+  letter-spacing: 0.05em;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+p {
+  line-height: 1.5em; 
+}
+a {
+  text-decoration: none;
+  color: #000; 
+}
+ul, li {
+  margin: 0; 
+}
+ul li, li li {
+  list-style: none; 
+}
+img {
+  width: auto;
+  max-width: 100%; 
+}
+
+/** General CSS **/
+.grid-row {
+  display: flex;
+  flex-wrap: wrap; 
+}
+.grid-col-12 {
+  flex: 100%;
+  max-width: 100%; 
+}
+.grid-col-11 {
+  flex: 91.66%;
+  max-width: 91.66%; 
+}
+.grid-col-10 {
+  flex: 83.33%;
+  max-width: 83.33%; 
+}
+.grid-col-9 {
+  flex: 75%;
+  max-width: 75%; 
+}
+.grid-col-8 {
+  flex: 66.66%;
+  max-width: 66.66%; 
+}
+.grid-col-7 {
+  flex: 58.33%;
+  max-width: 58.33%; 
+}
+.grid-col-6 {
+  flex: 50%;
+  max-width: 50%; 
+}
+.grid-col-5 {
+  flex: 41.66%;
+  max-width: 41.66%; 
+}
+.grid-col-4 {
+  flex: 33.33%;
+  max-width: 33.33%; 
+}
+.grid-col-3 {
+  flex: 25%;
+  max-width: 25%; 
+}
+.grid-col-2 {
+  flex: 16.66%;
+  max-width: 16.66%; 
+}
+.grid-col-1 {
+  flex: 8.333%;
+  max-width: 8.333%; 
+}
+.section-wrapper {
+  padding: 50px;
+}
+#loading {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+/** Page Top CSS **/
+.page-top {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 1440px;
+}
+.page-top .section-wrapper {
+  background: linear-gradient(180deg, #eef5ff, transparent);
+  opacity: 0.8;
+}
+.page-top .left {
+  display: flex;
+  align-items: center;
+}
+#navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin: 0 8px;
+}
+nav ul li a {
+  color: #293248;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 25px;
+  transition: 300ms ease-out;
+}
+nav ul li a:hover, nav ul li a:focus {
+  background: #edf5ff;
+  border-radius: 50px;
+}
+nav ul li.active a {
+  background: #000;
+  border-radius: 50px;
+  color: #fff;
+}
+.page-top .right {
+  text-align: right;
+}
+.logo {
+  width: 150px;
+}
+.section {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+a.button {
+  background: #fff;
+  color: #2672da;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 300ms ease-out;
+}
+a.button:hover, a.button:focus {
+  background: #003b88;
+  color: #fff;
+}
+
+/** Home Page CSS **/
+#homepage {
+  color: #fff;
+  background: url('images/home-illustration.png') no-repeat 0 0/cover; 
+}
+#homepage .right {
+  position: relative;
+}
+#homepage img.yoga-pose {
+  width: 420px;
+  position: absolute;
+  top: -75px;
+}
+#homepage .intro {
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1.4em;
+  max-width: 550px;
+}
+#homepage .title {
+  text-transform: uppercase;
+  font-size: 110px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+#homepage .description p {
+  font-size: 12px;
+  font-weight: 100;
+}
+#homepage .description {
+  margin-top: 30px;
+  max-width: 380px;
+}
+#homepage .description a {
+  margin-top: 30px;
+  width: 125px;
+}
+#homepage .description a i {
+  margin-right: 8px;
+}
+
+/** Footer CSS **/
+footer {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 1440px;
+  bottom: 0;
+  text-align: right;
+}
+.social-links a {
+  color: #0059d4;
+  border: 1px solid #0059d4;
+  padding: 1px;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  font-size: 14px;
+  transition: 300ms ease-out;
+}
+.social-links a:hover, .social-links a:focus {
+  color: #fff;
+  background: #0059d4;
+}
+footer .section-wrapper {
+  padding: 0 50px 35px;
+}
+footer .attribute{
+  font-size: 11px;
+}
+
+/** Responsive CSS **/
+@media (max-width: 480px) {
+  .grid-col-9, .grid-col-6, .grid-col-3 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  #homepage {
+    text-align: center;
+  }
+  #homepage img.yoga-pose {
+    position: static;
+    width: 200px;
+  }
+  #homepage .intro {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .section .section-wrapper {
+    margin-top: 20px;
+  }
+  #homepage .title {
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  #homepage .description {
+    margin-top: 10px;
+  }
+  #homepage .description a {
+    margin: 20px auto;
+  }
+  .page-top .grid-row {
+    flex-direction: column-reverse;
+  }
+  .page-top .right {
+    text-align: center;
+  }
+  nav ul li a {
+    font-size: 12px;
+    padding: 5px 16px;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  .page-top .left {
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .section-wrapper {
+    padding: 30px;
+  }
+  footer {
+    text-align: center;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  #homepage img.yoga-pose {
+    width: 160px;
+  }
+  .section .section-wrapper {
+    margin-top: 20px;
+  }
+}
